@@ -1,0 +1,61 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(20 , 20, 20);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.rotate{
+
+  padding:20px ;
+   border-left: 4px solid gray;
+   border-bottom: 4px solid gray;
+   border-right: 4px solid #e63f40;;
+   border-top: 4px solid #e63f40;;
+   border-radius: 50%;
+   animation: rotation 8s infinite linear;
+}
+.innerRotate{
+   padding: 49%;
+   border-radius: 50%;
+   animation: rotationreverse 5s infinite linear;
+   border-left: 4px solid gray;
+   border-right:4px solid gray;
+   border-top:4px solid #e63f40;;
+   border-bottom: 4px solid #e63f40;;
+}
+
+@keyframes rotation{
+   from{
+       transform: rotate(0deg);
+   }
+   to{
+       transform: rotate(359deg);
+   }
+}
+
+@keyframes rotationreverse{
+   from{
+       transform: rotate(360deg);
+   }
+   to{
+       transform: rotate(9deg);
+   }
+}
+.card:hover{
+  box-shadow: 0 20px 30px 0 rgb(5 16 44 / 20%);
+  transform: translateY(-3px) scale(1.01);
+  transition:0.3s;
+}

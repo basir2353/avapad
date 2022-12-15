@@ -1,0 +1,29 @@
+.Navbutton, .Navbutton1{
+    color:rgb(175, 172, 172);
+    margin:5px 10px;
+    font-weight:bold;
+    font-size:18px;
+
+    text-transform: capitalize;
+}
+.Navbutton:hover, .Navbutton1:hover{
+   color: #dc3545;
+}
+.Connect{
+    padding:5px 20px;
+    background-color:#dc3545;
+}
+.Button, .Button1{
+    background-color:#dc3545;
+    padding:8px 20px;
+}
+.Button:hover , .Button1:hover{
+    cursor:pointer;
+    background-color:#dc3545;
+}
+@media screen and (max-width:900px)
+{
+    .Navbutton,.Button,.Connect{
+        display:none;
+    }
+}

@@ -1,0 +1,320 @@
+.Container {
+  text-align: center;
+  width: 83%;
+padding: 15px 20px;
+  margin: 85px auto;
+  color: white;
+  max-width: 1280px;
+}
+.tooglebutton {
+  padding: 5px 20px;
+}
+.button1:hover {
+  background-color: #0dcaf0;
+  color: black;
+  font-weight: bolder;
+}
+.button2:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: #dc3545;
+}
+.aboutus {
+  margin-top: 20%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.aboutus::after {
+  content: "WHAT AND WHY";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  word-spacing: 20px;
+  white-space: nowrap;
+  opacity: 0.1;
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.RotateContainer {
+  padding: 40px;
+  margin-top: 25px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  margin: 10% auto;
+  top: 50%;
+  padding: 40px;
+  width: 450px;
+  border-left: 4px solid gray;
+  border-bottom: 4px solid gray;
+  border-right: 4px solid #e63f40;
+  border-top: 4px solid #e63f40;
+  border-radius: 50%;
+  animation: rotation 8s infinite linear;
+}
+.rotate1
+{
+    margin: 10% auto;
+  top: 50%;
+  padding: 40px;
+  width: 355px;
+  border-left: 4px solid gray;
+  border-bottom: 4px solid gray;
+  border-right: 4px solid rgb(51, 50, 50);
+  border-top: 4px solid rgb(51, 50, 50);
+  border-radius: 50%;
+  animation: rotation 8s infinite linear;
+}
+.innerRotate {
+  padding: 49%;
+  border-radius: 50%;
+  animation: rotationreverse 5s infinite linear;
+  border-left: 4px solid gray;
+  border-right: 4px solid gray;
+  border-top: 4px solid #e63f40;
+  border-bottom: 4px solid #e63f40;
+}
+.innerRotate1
+{
+    padding: 49%;
+  border-radius: 50%;
+  animation: rotationreverse 5s infinite linear;
+  border-left: 4px solid gray;
+  border-right: 4px solid gray;
+  border-top: 4px solid rgb(68, 66, 66);
+  border-bottom: 4px solid rgb(51, 50, 50);
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationreverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.aboutimg {
+  position: absolute;
+  margin: 0px auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tieredsystem {
+  margin-top: 10%;
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tieredsystem::after {
+  content: "TIERED SYSTEM";
+  word-spacing: 25px;
+  font-size: 250%;
+  opacity: 0.1;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Tiers {
+  margin: 10% auto;
+  font-weight: bold;
+  font-size: 180%;
+}
+.active {
+  color: #dc3545;
+  border-bottom: 4px solid #dc3545;
+}
+.activeB {
+  color: #dc3545;
+  curson: pointer;
+}
+
+.token,
+.contact,
+.partner {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  overflow: hidden;
+  align-items: center;
+}
+.token::after {
+  content: "DISTRUBE TOKENS";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  word-spacing: 20px;
+  white-space: nowrap;
+  opacity: 0.1;
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact::after {
+  content: "CONTACT US";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  word-spacing: 20px;
+  white-space: nowrap;
+  opacity: 0.1;
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.partner::after {
+  content: "PARTNERS";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  word-spacing: 20px;
+  white-space: nowrap;
+  opacity: 0.1;
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardClaimer {
+  color: rgb(187, 184, 184);
+  padding: 20px;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+  background-color: rgb(24, 23, 23);
+  border-radius: 20px;
+}
+.cardClaimer:hover {
+  cursor: pointer;
+  transform: scale(1.001);
+  box-shadow: 0px 0px 15px 15px rgba(15, 15, 15, 0.5);
+  transition: 0.3s;
+}
+.StackingCard {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  background-color: rgb(24, 23, 23);
+  border-radius: 20px;
+  padding: 20px;
+}
+.ClaimerInputBox
+{
+    margin:20px auto;
+    text-align:left;
+    color:rgb(187, 184, 184);
+ 
+}
+.claimerinnerBox
+{
+        background-color: rgb(24, 23, 23);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.input{
+    width: 100%;
+    height: 60px;
+    background-color:transparent;
+    border: none;
+    color:#ffff;
+    font-size: 22px;
+    margin: 5px auto;
+}
+.stackingContainer {
+  color: rgb(187, 184, 184);
+  width: 100%;
+  flex-direction: row-reverse;
+  max-width: 1280px;
+  margin: 15px auto;
+}
+.leftsideButton {
+  width: 100%;
+  background-color: #dc3545;
+  color: white;
+  margin: 20px auto;
+}
+.leftsideButton:hover {
+  background-color: #dc3545;
+  cursor: pointer;
+}
+.rightsideBox {
+  display: flex;
+  justify-content: left;
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+}
+.middleboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.innermiddlebox {
+  
+  padding: 20px 10px;
+  background-color: rgb(24, 23, 23);
+  border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+  .rotate {
+    width: 100%;
+    padding: 20px;
+  }
+  .rotate1 {
+    width: 100%;
+    padding: 20px;
+  }
+  .Container {
+    margin: 3% auto;
+  }
+  .H2 {
+    font-size: 100%;
+  }
+  .button1,
+  .button2 {
+    width: 90%;
+  }
+}
